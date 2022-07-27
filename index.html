@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html style="height: auto;" class=""><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.7.2];shiny-javascript[1.7.2];font-awesome[6.1.1];ionrangeslider-javascript[2.3.1];strftime[0.9.2];ionrangeslider-css[2.3.1];bootstrap[3.4.1];selectize[0.12.4];AdminLTE[2.0.6];shinydashboard[0.7.2]</script>
+<script src="index_files/jquery.js"></script>
+<link href="index_files/shiny.css" rel="stylesheet">
+<script src="index_files/shiny.js"></script>
+<link href="index_files/all.css" rel="stylesheet">
+<link href="index_files/v4-shims.css" rel="stylesheet">
+<script src="index_files/ion.js"></script>
+<script src="index_files/strftime-min.js"></script>
+<link href="index_files/ion.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="index_files/bootstrap.css" rel="stylesheet">
+<link href="index_files/bootstrap-accessibility.css" rel="stylesheet">
+<script src="index_files/bootstrap.js"></script>
+<script src="index_files/bootstrap-accessibility.js"></script>
+<link href="index_files/selectize.css" rel="stylesheet">
+<script src="index_files/selectize.js"></script>
+<script src="index_files/selectize-plugin-a11y.js"></script>
+<link href="index_files/AdminLTE.css" rel="stylesheet">
+<link href="index_files/_all-skins.css" rel="stylesheet">
+<script src="index_files/app.js"></script>
+<link href="index_files/shinydashboard.css" rel="stylesheet">
+<script src="index_files/shinydashboard.js"></script>  <title>Mastering Shiny</title>
+  <title>Old Faithful Geyser Data</title>
+</head>
+<body class="skin-blue" style="min-height: 611px; height: auto;">
+  <div class="wrapper" style="height: auto;">
+    <header class="main-header">
+      <span class="logo">Mastering Shiny</span>
+      <nav class="navbar navbar-static-top" role="navigation">
+        <span style="display:none;">
+          <i class="fa fa-bars" role="presentation" aria-label="bars icon"></i>
+        </span>
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav"></ul>
+        </div>
+      </nav>
+    </header>
+    <aside id="sidebarCollapsed" class="main-sidebar shiny-bound-input" data-collapsed="false">
+      <section id="sidebarItemExpanded" class="sidebar shiny-bound-input">
+        <ul class="sidebar-menu">
+          <li class="active">
+            <a href="#shiny-tab-default" data-toggle="tab" data-value="default" aria-expanded="true" tabindex="0" aria-selected="true">
+              <span>Default app</span>
+            </a>
+          </li>
+          <li>
+            <a href="#shiny-tab-my_first" data-toggle="tab" data-value="my_first">
+              <span>My first shiny app</span>
+            </a>
+          </li>
+          <li>
+            <a href="#shiny-tab-data_summary" data-toggle="tab" data-value="data_summary">
+              <span>Summarize data sets</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <div class="content-wrapper" style="min-height: 752px;">
+      <section class="content">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="shiny-tab-default" aria-hidden="false" tabindex="0">
+            <div class="container-fluid">
+              <h2>Old Faithful Geyser Data</h2>
+              <div class="row">
+                <div class="col-sm-4">
+                  <form class="well" role="complementary">
+                    <div class="form-group shiny-input-container">
+                      <label class="control-label" id="bins-label" for="bins">Number of bins:</label>
+                      <span class="irs irs--shiny js-irs-0 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">1</span><span class="irs-max" style="visibility: visible;">50</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 55.6278%;">30</span></span><span class="irs-grid" style="width: 92.9757%; left: 3.41213%;"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%; margin-left: -1.75607%;">1</span><span class="irs-grid-pol small" style="left: 6.802721088435375%"></span><span class="irs-grid-pol small" style="left: 3.4013605442176873%"></span><span class="irs-grid-pol" style="left: 10.204081632653061%"></span><span class="irs-grid-text js-grid-text-1" style="left: 10.2041%; visibility: visible; margin-left: -1.75607%;">6</span><span class="irs-grid-pol small" style="left: 17.006802721088434%"></span><span class="irs-grid-pol small" style="left: 13.60544217687075%"></span><span class="irs-grid-pol" style="left: 20.408163265306122%"></span><span class="irs-grid-text js-grid-text-2" style="left: 20.4082%; visibility: visible; margin-left: -2.44784%;">11</span><span class="irs-grid-pol small" style="left: 27.210884353741495%"></span><span class="irs-grid-pol small" style="left: 23.80952380952381%"></span><span class="irs-grid-pol" style="left: 30.612244897959183%"></span><span class="irs-grid-text js-grid-text-3" style="left: 30.6122%; visibility: visible; margin-left: -2.55428%;">16</span><span class="irs-grid-pol small" style="left: 37.414965986394556%"></span><span class="irs-grid-pol small" style="left: 34.01360544217687%"></span><span class="irs-grid-pol" style="left: 40.816326530612244%"></span><span class="irs-grid-text js-grid-text-4" style="left: 40.8163%; margin-left: -2.55428%;">21</span><span class="irs-grid-pol small" style="left: 47.61904761904761%"></span><span class="irs-grid-pol small" style="left: 44.21768707482993%"></span><span class="irs-grid-pol" style="left: 51.0204081632653%"></span><span class="irs-grid-text js-grid-text-5" style="left: 51.0204%; visibility: visible; margin-left: -2.55428%;">26</span><span class="irs-grid-pol small" style="left: 57.82312925170068%"></span><span class="irs-grid-pol small" style="left: 54.42176870748299%"></span><span class="irs-grid-pol" style="left: 61.224489795918366%"></span><span class="irs-grid-text js-grid-text-6" style="left: 61.2245%; visibility: visible; margin-left: -2.55428%;">31</span><span class="irs-grid-pol small" style="left: 68.02721088435374%"></span><span class="irs-grid-pol small" style="left: 64.62585034013605%"></span><span class="irs-grid-pol" style="left: 71.42857142857143%"></span><span class="irs-grid-text js-grid-text-7" style="left: 71.4286%; visibility: visible; margin-left: -2.55428%;">36</span><span class="irs-grid-pol small" style="left: 78.2312925170068%"></span><span class="irs-grid-pol small" style="left: 74.82993197278911%"></span><span class="irs-grid-pol" style="left: 81.63265306122449%"></span><span class="irs-grid-text js-grid-text-8" style="left: 81.6327%; margin-left: -2.55428%;">41</span><span class="irs-grid-pol small" style="left: 88.43537414965986%"></span><span class="irs-grid-pol small" style="left: 85.03401360544217%"></span><span class="irs-grid-pol" style="left: 91.83673469387755%"></span><span class="irs-grid-text js-grid-text-9" style="left: 91.8367%; visibility: visible; margin-left: -2.55428%;">46</span><span class="irs-grid-pol small" style="left: 97.27891156462584%"></span><span class="irs-grid-pol small" style="left: 94.5578231292517%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-10" style="left: 100%; visibility: visible; margin-left: -2.55428%;">50</span></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 58.5386%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 55.0265%;"><i></i><i></i><i></i></span></span><input class="js-range-slider irs-hidden-input shiny-bound-input" id="bins" data-skin="shiny" data-min="1" data-max="50" data-from="30" data-step="1" data-grid="true" data-grid-num="9.8" data-grid-snap="false" data-prettify-separator="," data-prettify-enabled="true" data-keyboard="true" data-data-type="number" tabindex="-1" readonly="readonly" value="30">
+                    </div>
+                  </form>
+                </div>
+                <div class="col-sm-8" role="main">
+                  <div id="distPlot" class="shiny-plot-output shiny-bound-output" style="width:100%;height:400px;" aria-live="polite"><img src="data:image/png;base64,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" alt="Plot object" width="735" height="400"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="shiny-tab-my_first">
+            <div class="container-fluid">Hello, world!</div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="shiny-tab-data_summary">
+            <div class="container-fluid">
+              <div class="form-group shiny-input-container">
+                <label class="control-label" id="dataset-label" for="dataset-selectized">Dataset</label>
+                <div>
+                  <select id="dataset" tabindex="-1" style="display: none;" class="selectized shiny-bound-input"><option value="ability.cov" selected="selected">ability.cov</option></select><div class="selectize-control single plugin-selectize-plugin-a11y"><div class="selectize-input items full has-options has-items"><div class="item" data-value="ability.cov">ability.cov</div><input type="text" autocomplete="off" tabindex="" id="dataset-selectized" style="width: 4px;" role="combobox" aria-expanded="false" haspopup="listbox" aria-owns="wxy1un1ezx"></div><div class="selectize-dropdown single plugin-selectize-plugin-a11y" style="display: none;"><div class="selectize-dropdown-content" role="listbox" id="wxy1un1ezx"></div></div></div>
+                  <script type="application/json" data-for="dataset" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+                </div>
+              </div>
+              <pre class="shiny-text-output noplaceholder shiny-bound-output" id="summary" aria-live="polite"></pre>
+              <div id="table" class="shiny-html-output shiny-bound-output" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+<div aria-live="assertive" role="log" aria-relevant="additions" aria-atomic="true" style="position: absolute; width: 1px; height: 1px; margin-top: -1px; clip: rect(1px, 1px, 1px, 1px); overflow: hidden;"></div><script>mendeleyWebImporter = {
+  downloadPdfs(e,t) { return this._call('downloadPdfs', [e,t]); },
+  open() { return this._call('open', []); },
+  setLoginToken(e) { return this._call('setLoginToken', [e]); },
+  _call(methodName, methodArgs) {
+    const id = Math.random();
+    window.postMessage({ id, token: '0.41217962231397376', methodName, methodArgs }, 'http://127.0.0.1:6241');
+    return new Promise(resolve => {
+      const listener = window.addEventListener('message', event => {
+        const data = event.data;
+        if (typeof data !== 'object' || !('result' in data) || data.id !== id) return;
+        window.removeEventListener('message', listener);
+        resolve(data.result);
+      });
+    });
+  }
+};</script></body></html>
